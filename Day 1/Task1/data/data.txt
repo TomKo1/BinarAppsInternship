@@ -1,0 +1,6 @@
+book 
+boat 
+tomek
+domek 
+domek
+
