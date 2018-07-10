@@ -9,3 +9,21 @@ git branch -d branch_name
 
 # Staging/beta -> po to zeby nie wrzucac czegos od razu na mastera  -> takie do testowania
 
+-> commit messages && tags
+
+                    RVM: 
+-> do zarzadzania wersjami rubiego (jest wydzielona przestrzen)
+rvm list 
+-> daje koncepcje gemsetow
+
+rvm use wersja
+rvm install wersja 
+
+rvm gesmet use test
+rvm gemset use test
+
+rvm use --create 2.1.5@test 
+# tych 2 plikow szuka rvm
+.ruby-gemset
+.ruby-version 
+

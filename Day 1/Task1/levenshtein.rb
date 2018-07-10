@@ -13,11 +13,12 @@ array = []
 
 # z pliku 
 
-line_counter = 0
-File.open("./data/data.txt",'r').each_line do |line|
-    array << line.gsub(/\s/, '')
-    line_counter += 1
-end
+# TDDO: improve this code :) adn write recursive version
+# line_counter = 0
+# File.open("./data/data.txt",'r').each_line do |line|
+#     array << line.gsub(/\s/, '')
+#     line_counter += 1
+# end
 
 how_many_lines = File.open("./data/data.txt",'r').lines.count 
 if how_many_lines  % 2 != 0 
