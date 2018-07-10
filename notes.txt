@@ -1,1 +1,13 @@
+            BRANCH: 
+git branch branch_name 
+
+git checkout branch_name # przeniesienie na brancha :)
+
+git merge branch_name  # do wracania do mastera -> 'kto pierwszy ten lepszy' 
+
+git branch -d branch_name 
+
+# Staging/beta -> po to zeby nie wrzucac czegos od razu na mastera  -> takie do testowania
+
+
 
