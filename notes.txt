@@ -27,3 +27,76 @@ rvm use --create 2.1.5@test
 .ruby-gemset
 .ruby-version 
 
+-> jest wiele punktów wejścia do aplikacji 
+
+				MODELE: 
+
+# Object-Relation Mapping (ORM)
+# klasa Base z ktorej musza dziedziczyc wszystkie nasze modele 
+
+		Migracje:
+
+ # jest tez autochange -> domyslic sie jak sie wycofac
+# up co
+# down co ma sie stac jak bedziemy cofa migraje
+
+
+Rake pozwala pisac swoje skrypty -> taski
+
+Jezeli podam komende rails a Rails ich nie znajdzie to szuka w rake
+
+ post.persisted? # sprawdza czy obiekt jest zapisany w bazie danych 
+
+create wstawia i zwraca obiekt zapisany do bazy 
+
+
+
+
+Jak będzie wyjątek 
+	Post.find(1) to domyślnie Rails wyświetli 404 
+# ajer od Railsów :) 
+# spoko opcja :) 
+DateTime.now - 2.weeks
+
+56.minutes.ago
+
+
+ Post.update_all(author: 'Karol Iksinski')
+
+
+# usuwanie postu 
+Post.find(1).destroy
+
+
+
+Rails console -> reload! -> żeby przeładować 
+
+Kazdy ktory dziecdziczy po ActiveRecord ma w sobie tablie errors ktora zawiera 
+	bledy walidacji 
+
+post.errors.messages # zwraca wszystkie bledy jako w tablicy
+
+post.valid? # true albo false w zaleznosci od tego czy jest vlaid czy nie
+
+Scope -> to wyszukiwania 
+
+Command 
+
+
+NIGDY NUE MODYFIKUJEMY MIGRACJI 
+
+# bardzo duzo metod :) 
+belongs_to :author
+has_one :post 
+
+	
+Konwencja: 
+AuthorPost # posortowane alfabetycznie i dorzucona liczba mnoga na koncu sanbke casem nazwa pliku 
+
+
+Indeksy trzeba dodawać do kolumn ktore sa idikami 
+
+1. Dodać walidację do autora 
+2. Każdy post ma wiele komentarzy 
+
+
