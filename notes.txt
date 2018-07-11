@@ -100,3 +100,42 @@ Indeksy trzeba dodawać do kolumn ktore sa idikami
 2. Każdy post ma wiele komentarzy 
 
 
+		ZAKRESY ZMIENNYCH: 
+public 
+protected
+private - podstawa enkapsulacji -> nie mozna wywolac z zewnatrz 
+
+$ - zmienne globalne
+TITLE - to jest stała w Ruby (po tym jak raz przypiszemy to nie mozemy jej modyfikowac) 
+
+
+300 - cos bylo cache
+400 -> cos poszlo nie tak po stronie uzytkownika 
+500 -> cos poszlo nie tak po stronie servera 
+	500, 522 -> do tego sa railsy bardzo dobrze przygotowane
+
+GET -> pobieranie z bazy danych, renderowanie 
+HEAD -> nie potrzebujemy body
+PUT ->	wymienia caly obiekt
+POST -> kiedy chcemy wrzucic jakies dane na server  
+PATCH -> tylko czesciowo zmieniamy
+DELETE -> kiedy chcemy usunąć jakiś zasób
+
+# wyswietlanie routow
+rake routes | grep root
+
+1. new -> zwraca formularz do tworzenia
+2. create -> faktycznie tworzy
+
+1. Edit -> formularz do edycji 
+2. update -> faktyczny update (PUT/PATCH)
+
+
+Partiale tylko jako erb :) a nie html (to dla tego co sie rendereuje dla uzytkownika) 
+
+
+W kontrolerze kolekcja autorow i select boxem wyrzucic 
+-> zrobic to samo dla postow
+-> moze byc profil autora i z autora 
+
+
