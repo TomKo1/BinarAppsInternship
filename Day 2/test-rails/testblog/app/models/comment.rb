@@ -3,4 +3,6 @@ class Comment < ActiveRecord::Base
    
    has_many :comment_commentators
    has_many :commentators, through: :comment_commentators
+
+   validates :content, presence: true
 end

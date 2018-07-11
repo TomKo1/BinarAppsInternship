@@ -12,8 +12,6 @@ class AuthorTest < ActiveSupport::TestCase
         assert_not author.valid?
     end
 
-
-    # validates :age, :inclusion => 1..150
     test "surname should be present and of max length 30" do 
         author = Author.new(name: 'Tomek', age: 20)
         assert_not author.valid?

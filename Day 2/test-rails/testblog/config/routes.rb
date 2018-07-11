@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   root 'home#welcome'
   resources :authors
   resources :posts
+  
+
+  # specific routes to fully support post commenting 
+  get '/comments/new/:post_id', to: 'comments#new', as: :new_comment
+  post '/comment', to: 'comments#create'
 
   # get '/authors', to: 'authors#index', as: :authors
   # get '/authors/:id', to: 'authors#show', as: :author
