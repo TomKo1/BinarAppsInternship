@@ -8,12 +8,11 @@ class CommentsController < ApplicationController
 
     def create 
         @comment = Comment.new(comment_params)
-
+        
         if @comment.save 
-            # redirect_to pozostanie w kontekscie -> @author 
             redirect_to posts_path, notice: 'You commented successfully!'
         else
-           #render :new
+           render :new
         end
     end
 
@@ -21,6 +20,5 @@ class CommentsController < ApplicationController
         def comment_params
             params.require(:comment).permit(:content, :post_id)
         end
-
 
 end

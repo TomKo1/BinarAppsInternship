@@ -138,4 +138,5 @@ W kontrolerze kolekcja autorow i select boxem wyrzucic
 -> zrobic to samo dla postow
 -> moze byc profil autora i z autora 
 
-
+# atrybuty danego modelu 
+Author.new.attributes
